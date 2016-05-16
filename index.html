@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tasks</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+		.panel-heading a {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Tasks</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+				<ul class="nav navbar-nav">
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-lg-3 col-xs-6">
+				<div class="panel panel-success">
+					<div class="panel-heading"><input type="checkbox" checked/> <a href="singletask.html">Task 1</a></div>
+					<div class="panel-body">Tasks page</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 col-xs-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><input type="checkbox" /> <a href="singletask.html">Task 2</a></div>
+					<div class="panel-body">Single task page</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 col-xs-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><input type="checkbox" /> <a href="singletask.html">Task 3</a></div>
+					<div class="panel-body">About page</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-3 col-xs-6">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><input type="checkbox" /> <a href="singletask.html">Task 4</a></div>
+					<div class="panel-body">Optimize</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+	<script type="text/javascript">
+		$('input[type="checkbox"]').click(function(){
+			$(this).parents(".panel").toggleClass("panel-primary panel-success");
+		});
+	</script>
+</body>
+</html>
